@@ -13,6 +13,7 @@ return(
     <div>
         <h3>Likes:{team}</h3>
         <button onClick={handleLike}>Like</button>
+        <button onClick={handleUnLike}>UnLike</button>
     </div>
 )
 }
