@@ -16,11 +16,12 @@ const Countries = () => {
     setAddedVisited(newAddVisited);
   };
 
-  // const[flag, setFlag] = useState([])
-  // const handleFlags =(country) =>{
-  //   const newFlag = [...flag, country.flags.png];
-  //   setFlag(newFlag)
-  // }
+  const [visitedFlags, setVisitedFlags] = useState([]);
+
+  const handleVisitedFlags = flag => {
+    const newVisitedFlags = [...visitedFlags, flag];
+    setVisitedFlags(newVisitedFlags);
+}
 
   return (
     <div>
@@ -28,17 +29,25 @@ const Countries = () => {
       <div>
         <h2>list of Visited Country:{addVisited.length}</h2>
         <ul>
-          {addVisited.map((country) => (
-            <li key={country.cca3}>{country.name.common}</li>
+          {addVisited.map((country, index) => (
+            <li key={index}>{country.name.common}</li>
           ))}
         </ul>
       </div>
+
+      <div>
+        {
+          visitedFlags.map((flag, index) => <img key={index} src={flag}></img>)
+        }
+      </div>
+
       <div className="countries">
         {countries.map((country, index) => (
           <Country
             key={index}
             country={country}
             handleVisitedCountry={handleVisitedCountry}
+            handleVisitedFlags={handleVisitedFlags}
           ></Country>
         ))}
       </div>
