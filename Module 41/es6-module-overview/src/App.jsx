@@ -1,10 +1,11 @@
 import './App.css'
-
+import Bottles from './assets/Component/Bottles/Bottles'
 function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
+      <h1>Adidas</h1>
+      <Bottles></Bottles>
     </>
   )
 }
