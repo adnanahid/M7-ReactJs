@@ -30,8 +30,8 @@ const Static = () => {
               </a>
             </li>
           </ul>
-          <div className="flex justify-between gap-4">
-            <label className="input input-bordered flex items-center gap-2">
+          <div className="flex justify-between items-center gap-4">
+            <label className="input input-bordered flex items-center gap-2 rounded-3xl h-9">
               <input type="text" className="grow" placeholder="Search" />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
