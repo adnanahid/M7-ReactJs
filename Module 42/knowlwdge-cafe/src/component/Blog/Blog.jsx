@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
+import { CiBookmark } from "react-icons/ci";
 
 const Blog = ({ blogInfo }) => {
   return (
@@ -13,9 +14,22 @@ const Blog = ({ blogInfo }) => {
             <p>{blogInfo.posted_date}</p>
           </div>
         </div>
-        <p>{blogInfo.reading_time} min to read</p>
+        <div className="flex justify-between items-center gap-2">
+          <span>{blogInfo.reading_time} min to read</span>
+          <button>
+            <CiBookmark />
+          </button>
+        </div>
       </div>
-      <h1 className="text-5xl font-semibold">{blogInfo.title}</h1>
+      <h1 className="w-8/12 text-5xl font-semibold">{blogInfo.title}</h1>
+
+      <p>
+        {blogInfo.hashtags.map((hashtag, index) => (
+          <span key={index}>
+            <a href="#">#{hashtag}</a>
+          </span>
+        ))}
+      </p>
     </div>
   );
 };
