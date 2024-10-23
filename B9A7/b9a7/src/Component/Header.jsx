@@ -3,7 +3,7 @@ const Static = () => {
     <div>
       <nav className="bg-white">
         <div className="container mx-auto flex items-center justify-between py-4">
-          <div className="text-2xl font-bold md:w-[300px] text-start">
+          <div className="text-3xl font-bold md:w-[300px] text-start">
             Recipe Calories
           </div>
           <ul className="flex space-x-4">

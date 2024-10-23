@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import Menu from "./Menu";
 
-const AllMenu = ({ menus }) => {
+const AllMenu = ({ menus, handleWantToCook }) => {
   return (
     <div className="w-3/5 grid grid-cols-2 gap-5">
       {menus.map((menuInfo, index) => (
-        <Menu key={index} menuInfo={menuInfo}></Menu>
+        <Menu key={index} menuInfo={menuInfo} handleWantToCook={handleWantToCook}></Menu>
       ))}
     </div>
   );
@@ -20,6 +20,7 @@ AllMenu.propTypes = {
     calories: PropTypes.string.isRequired,
     ingredients: PropTypes.arrayOf(PropTypes.string).isRequired,
   })).isRequired,
+  handleWantToCook: PropTypes.function,
 };
 
 export default AllMenu;

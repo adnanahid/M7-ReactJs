@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Menu = ({ menuInfo, handleSidebar }) => {
+const Menu = ({ menuInfo, handleWantToCook }) => {
   return (
     <div className="border border-gray-200 rounded-xl p-5">
       <img
@@ -33,7 +33,7 @@ const Menu = ({ menuInfo, handleSidebar }) => {
           <i className="fa-brands fa-gripfire"></i> {menuInfo.calories}
         </span>
       </div>
-      <button onClick={handleSidebar} className="btn text-white font-bold bg-green-500 rounded-3xl">
+      <button onClick={handleWantToCook} className="btn text-white font-bold bg-green-500 rounded-3xl">
         Want to coock
       </button>
     </div>
@@ -49,7 +49,7 @@ Menu.propTypes = {
     calories: PropTypes.string.isRequired, // expects a string (e.g., "200 kcal")
     ingredients: PropTypes.arrayOf(PropTypes.string).isRequired, // expects an array of strings
   }).isRequired,
-  handleSidebar: PropTypes.function,
+  handleWantToCook: PropTypes.function,
 };
 
 export default Menu;
