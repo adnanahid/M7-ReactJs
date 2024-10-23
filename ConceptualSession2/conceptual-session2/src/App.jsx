@@ -1,31 +1,21 @@
+import Banner from './Banner';
 import { useState } from "react";
-import Banner from "./Banner";
 import MainBody from "./MainBody";
 import SideBar from "./SideBar";
 
 const App = () => {
-  const [isActive, setIsActive] = useState({
+  const [toggle, setToggle] = useState({
     cart: true,
   });
-
-  const handleIsActive = (cart) => {
-    if (cart === true) {
-      setIsActive({
-        cart: true,
-      });
-    } else {
-      setIsActive({
-        cart: false,
-      });
-    }
+  const handleToggle = (cart) => {
+    setToggle({ cart: cart === true });
   };
-
   return (
     <div>
-      <Banner></Banner>
+      <Banner />
       <div className="flex justify-between">
-        <MainBody></MainBody>
-        <SideBar handleIsActive={handleIsActive} isActive={isActive}></SideBar>
+        <MainBody />
+        <SideBar handleToggle={handleToggle} toggle={toggle}/>
       </div>
     </div>
   );

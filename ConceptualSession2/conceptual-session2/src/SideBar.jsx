@@ -1,15 +1,14 @@
 import PropTypes from "prop-types";
-
-const SideBar = ({ handleIsActive, isActive }) => {
+const SideBar = ({ handleToggle, toggle }) => {
   return (
     <div className="w-5/12 p-5">
       <h1 className="text-center text-2xl font-bold">SideBar</h1>
       <hr className="my-5" />
       <div className="flex justify-around">
         <button
-          onClick={() => handleIsActive(true)}
+          onClick={() => handleToggle(true)}
           className={`${
-            isActive.cart
+            toggle.cart === true
               ? "bg-cyan-900 btn text-white font-bold w-24 rounded-2xl text-lg"
               : "btn text-black font-bold w-24 rounded-2xl text-lg"
           }`}
@@ -17,9 +16,9 @@ const SideBar = ({ handleIsActive, isActive }) => {
           Cart
         </button>
         <button
-          onClick={() => handleIsActive(false)}
+          onClick={() => handleToggle(false)}
           className={`${
-            isActive.cart
+            toggle.cart === true
               ? "btn text-black font-bold w-24 rounded-2xl text-lg"
               : "bg-cyan-900 btn text-white font-bold w-24 rounded-2xl text-lg"
           }`}
@@ -31,10 +30,8 @@ const SideBar = ({ handleIsActive, isActive }) => {
     </div>
   );
 };
-
 SideBar.propTypes = {
-  handleIsActive: PropTypes.func, // Correct type for function
-  isActive: PropTypes.bool, // Correct type for boolean
+  handleToggle: PropTypes.func,
+  toggle: PropTypes.bool,
 };
-
 export default SideBar;
