@@ -1,16 +1,32 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const Menu = ({ menuinfo }) => {
-    return (
-        <div className='border border-gray-200 rounded-xl p-5'>
-            <img className='rounded-xl pb-5' src={menuinfo.recipe_image} />
-            <h2 className='text-start text-xl font-bold pb-2 '>{menuinfo.recipe_name}</h2>
-            <p className="text-start  text-gray-600 pb-3">{menuinfo.short_description}</p>
-            <button className='btn bg-sky-200 rounded-2xl'>Want to coock</button>
-        </div>
-    );
+  return (
+    <div className="border border-gray-200 rounded-xl p-5">
+      <img className="rounded-xl pb-5 h-[200px] w-full object-cover" src={menuinfo.recipe_image} />
+      <h2 className="text-start text-xl font-bold pb-2 ">
+        {menuinfo.recipe_name}
+      </h2>
+      <p className="text-start  text-gray-600 pb-3">
+        {menuinfo.short_description}
+      </p>
+      <hr />
+      <h2 className="text-xl font-semibold text-start py-3">
+        Ingredients: {menuinfo.ingredients.length}
+      </h2>
+      <ul className="pb-5 text-gray-600">
+        {menuinfo.ingredients.map((ingredient, index) => (
+          <li key={index} className="text-start pl-3 pb-1">
+            {ingredient}
+          </li>
+        ))}
+      </ul>
+      <hr />
+      <div className="flex justify-between py-5 text-gray-600"><span>Preparing time: {menuinfo.preparing_time}</span><span>{menuinfo.calories}</span></div>
+      <button className="btn text-white font-bold bg-green-500 rounded-3xl">Want to coock</button>
+    </div>
+  );
 };
 
 export default Menu;
-

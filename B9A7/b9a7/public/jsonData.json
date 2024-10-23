@@ -1,6 +1,6 @@
 [
   {
-    "recipe_image": "../src/assets/th (4).jpeg",
+    "recipe_image": "../src/assets/th.jpeg",
     "recipe_id": 1,
     "recipe_name": "Spicy Chicken Stir-fry",
     "short_description": "A quick and easy stir-fry with a kick.",
@@ -9,7 +9,7 @@
     "calories": "320 calories"
   },
   {
-    "recipe_image": "../src/assets/th (4).jpeg",
+    "recipe_image": "../src/assets/th (1).jpeg",
     "recipe_id": 2,
     "recipe_name": "Vegetable Pasta",
     "short_description": "A healthy mix of vegetables and pasta.",
@@ -18,7 +18,7 @@
     "calories": "280 calories"
   },
   {
-    "recipe_image": "../src/assets/th (4).jpeg",
+    "recipe_image": "../src/assets/th (2).jpeg",
     "recipe_id": 3,
     "recipe_name": "Beef Tacos",
     "short_description": "Delicious and filling beef tacos.",
@@ -27,7 +27,7 @@
     "calories": "350 calories"
   },
   {
-    "recipe_image": "../src/assets/th (4).jpeg",
+    "recipe_image": "../src/assets/th (3).jpeg",
     "recipe_id": 4,
     "recipe_name": "Mushroom Risotto",
     "short_description": "Creamy risotto with fresh mushrooms.",
@@ -45,7 +45,7 @@
     "calories": "450 calories"
   },
   {
-    "recipe_image": "../src/assets/th (4).jpeg",
+    "recipe_image": "../src/assets/R.jpeg",
     "recipe_id": 6,
     "recipe_name": "Chocolate Cake",
     "short_description": "Rich and moist chocolate cake.",
