@@ -33,8 +33,8 @@ const Menu = ({ menuInfo, handleWantToCook }) => {
           <i className="fa-brands fa-gripfire"></i> {menuInfo.calories}
         </span>
       </div>
-      <button onClick={handleWantToCook} className="btn text-white font-bold bg-green-500 rounded-3xl">
-        Want to coock
+      <button onClick={()=>handleWantToCook(menuInfo)} className="btn btn-error text-white font-bold rounded-3xl">
+        Want to cook
       </button>
     </div>
   );

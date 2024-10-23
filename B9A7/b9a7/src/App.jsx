@@ -12,16 +12,18 @@ function App() {
       .then((data) => setMenus(data));
   }, []);
 
-  const handleWantToCook = () => {
-    console.log('ok');
+  const[wantCook, setWantCook] = useState([])
+  const handleWantToCook = ({menuInfo}) => {
+    setWantCook(menuInfo)
   }
+  console.log(wantCook);
 
   return (
     <>
       <Header></Header>
       <div className="flex gap-5">
         <AllMenu menus={menus} handleWantToCook={handleWantToCook}></AllMenu>
-        <MainSidebar></MainSidebar>
+        <MainSidebar wantCook={wantCook}></MainSidebar>
       </div>
     </>
   );
