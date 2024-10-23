@@ -31,12 +31,14 @@ function App() {
     const deleted = wantCook.find((recipe)=>recipe.recipe_id === id); 
     setOrder([...order,deleted]);
   };
+
+
   return (
     <>
       <Header></Header>
       <div className="flex gap-5">
         <AllMenu menus={menus} handleWantToCook={handleWantToCook}></AllMenu>
-        <MainSidebar wantCook={wantCook} handleRemove={handleRemove}></MainSidebar>
+        <MainSidebar wantCook={wantCook} handleRemove={handleRemove} order={order}></MainSidebar>
       </div>
     </>
   );
