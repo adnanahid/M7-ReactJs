@@ -33,7 +33,7 @@ const Static = () => {
               <input type="text" className="grow" placeholder="Search" />
             </label>
             <button className="border rounded-full">
-              <i className="fa-solid fa-user p-4"></i>
+              <i className="fa-solid fa-user p-3"></i>
             </button>
           </div>
         </div>

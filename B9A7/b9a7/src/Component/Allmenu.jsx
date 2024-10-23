@@ -3,7 +3,7 @@ import Menu from "./Menu";
 
 const AllMenu = ({ menus, handleWantToCook }) => {
   return (
-    <div className="w-3/5 grid grid-cols-2 gap-5">
+    <div className="w-7/12 grid grid-cols-2 gap-5">
       {menus.map((menuInfo, index) => (
         <Menu key={index} menuInfo={menuInfo} handleWantToCook={handleWantToCook}></Menu>
       ))}
