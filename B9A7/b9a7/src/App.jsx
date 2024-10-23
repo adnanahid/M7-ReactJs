@@ -13,11 +13,14 @@ function App() {
   }, []);
 
   const[wantCook, setWantCook] = useState([])
-  const handleWantToCook = ({menuInfo}) => {
-    setWantCook(menuInfo)
+  const handleWantToCook = (menuInfo) => {
+    const isExist = wantCook.find(perviousId => perviousId.recipe_id === menuInfo.recipe_id)
+    if(!isExist){
+      setWantCook([...wantCook, menuInfo])
+    } else{
+      alert('fuck off')
+    }
   }
-  console.log(wantCook);
-
   return (
     <>
       <Header></Header>
