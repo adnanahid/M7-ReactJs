@@ -18,12 +18,18 @@ const App = () => {
       .then((data) => setProducts(data));
   }, []);
 
+  const[cart, setCart] = useState([])
+  const handleCart = (product) => {
+    const newCart = [...cart, product]
+    setCart(newCart)
+  };
+
   return (
     <div>
       <Banner />
       <div className="flex justify-between">
-        <MainBody products={products} />
-        <SideBar handleToggle={handleToggle} toggle={toggle} />
+        <MainBody handleCart={handleCart} products={products} />
+        <SideBar cart={cart} handleToggle={handleToggle} toggle={toggle} />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const MainBody = ({ products }) => {
+const MainBody = ({ products, handleCart }) => {
   return (
     <div className="w-7/12 p-5">
       <h1 className="text-center text-2xl font-bold">Products</h1>
@@ -27,7 +27,7 @@ const MainBody = ({ products }) => {
               </h2>
               <h4 className="text-md text-gray-600">{product.description}</h4>
               <div className="card-actions justify-end">
-                <button className="btn bg-cyan-900 text-white font-bold rounded-2xl hover:text-cyan-900 hover:bg-gray-100" >Buy Now</button>
+                <button onClick={()=>handleCart(product)} className="btn bg-cyan-900 text-white font-bold rounded-2xl hover:text-cyan-900 hover:bg-gray-100" >Buy Now</button>
               </div>
             </div>
           </div>
@@ -44,6 +44,7 @@ MainBody.propTypes = {
       price: PropTypes.string.isRequired,
     })
   ).isRequired,
+  handleCart: PropTypes.func,
 };
 
 export default MainBody;

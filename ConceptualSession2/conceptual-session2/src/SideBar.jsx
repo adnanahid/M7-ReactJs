@@ -1,5 +1,9 @@
 import PropTypes from "prop-types";
-const SideBar = ({ handleToggle, toggle }) => {
+import Cart from "./assets/cart";
+import About from "./About";
+
+const SideBar = ({ handleToggle, toggle, cart }) => {
+  console.log(cart);
   return (
     <div className="w-5/12 p-5">
       <h1 className="text-center text-2xl font-bold">SideBar</h1>
@@ -27,11 +31,17 @@ const SideBar = ({ handleToggle, toggle }) => {
         </button>
       </div>
       <hr className="my-5" />
+      <div>
+        {
+          toggle.cart === true ? <Cart cart={cart} ></Cart> : <About></About>
+        }
+      </div>
     </div>
   );
 };
 SideBar.propTypes = {
   handleToggle: PropTypes.func,
   toggle: PropTypes.object,
+  cart: PropTypes.array,
 };
 export default SideBar;
