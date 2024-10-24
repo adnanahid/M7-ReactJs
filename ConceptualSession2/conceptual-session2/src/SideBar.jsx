@@ -9,8 +9,8 @@ const SideBar = ({ handleToggle, toggle }) => {
           onClick={() => handleToggle(true)}
           className={`${
             toggle.cart === true
-              ? "bg-cyan-900 btn text-white font-bold w-24 rounded-2xl text-lg"
-              : "btn text-black font-bold w-24 rounded-2xl text-lg"
+              ? "bg-cyan-900 btn text-white font-bold w-24 rounded-2xl text-lg hover:text-cyan-900 hover:bg-gray-100"
+              : "btn text-black font-bold w-24 rounded-2xl text-lg hover:text-cyan-900 hover:bg-gray-100"
           }`}
         >
           Cart
@@ -19,8 +19,8 @@ const SideBar = ({ handleToggle, toggle }) => {
           onClick={() => handleToggle(false)}
           className={`${
             toggle.cart === true
-              ? "btn text-black font-bold w-24 rounded-2xl text-lg"
-              : "bg-cyan-900 btn text-white font-bold w-24 rounded-2xl text-lg"
+              ? "btn text-black font-bold w-24 rounded-2xl text-lg hover:text-cyan-900 hover:bg-gray-100"
+              : "bg-cyan-900 btn text-white font-bold w-24 rounded-2xl text-lg hover:text-cyan-900 hover:bg-gray-100"
           }`}
         >
           About
@@ -32,6 +32,6 @@ const SideBar = ({ handleToggle, toggle }) => {
 };
 SideBar.propTypes = {
   handleToggle: PropTypes.func,
-  toggle: PropTypes.bool,
+  toggle: PropTypes.object,
 };
 export default SideBar;

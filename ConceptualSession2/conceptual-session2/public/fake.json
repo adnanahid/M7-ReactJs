@@ -1,0 +1,50 @@
+[
+  {
+    "img": "https://i.ibb.co.com/XVnqy0H/Screenshot-2024-10-24-155133.png",
+    "price": "$399.99",
+    "name": "Ryzen 7 7800X3D",
+    "description": "An 8-core, 16-thread processor with a base Clock Speed: 4.2GHz Up to 5.0GHz, perfect for high-performance gaming and multitasking."
+  },
+  {
+    "img": "https://i.ibb.co.com/WxDRC2P/asus-dual-geforce-rtx-4060-ti-16gb.jpg",
+    "price": "$699.99",
+    "name": "Asus Dual 4070",
+    "description": "A powerful graphics card with 8GB GDDR6 memory, capable of ray tracing and running the latest AAA games at high settings."
+  },
+  {
+    "img": "https://i.ibb.co.com/TYd30Qj/h525.png",
+    "price": "$219.99",
+    "name": "ROG STRIX B650E-I GAMING WIFI",
+    "description": "A premium ITX motherboard with PCIe 4.0, Wi-Fi 6, and support for AMD Gen 5 CPUs, ideal for gamers and creators."
+  },
+  {
+    "img": "https://i.ibb.co.com/0yVZLxG/OIP-2.jpg",
+    "price": "$89.99",
+    "name": "G.Skill flare X5 16GB DDR5",
+    "description": "High-performance DDR5 memory with a clock speed of 6000MHz, optimized for both Intel and AMD platforms."
+  },
+  {
+    "img": "https://i.ibb.co.com/W3zXTzh/OIP.jpg",
+    "price": "$129.99",
+    "name": "Seagate FireCuda 530 1TB ",
+    "description": "An ultra-fast NVMe SSD with read speeds up to 7000MB/s, providing quick access to games and applications."
+  },
+  {
+    "img": "https://i.ibb.co.com/jyCZ03r/OIP-1.jpg",
+    "price": "$109.99",
+    "name": "Corsair sf750w",
+    "description": "A 750W 80+ Gold certified power supply, offering efficient power delivery with semi-modular cabling for easy installation."
+  },
+  {
+    "img": "https://i.ibb.co.com/sqdTNFS/Black-1.webp",
+    "price": "$149.99",
+    "name": "Meshroom D",
+    "description": "A sleek mid-tower case with a tempered glass front panel, RGB lighting, and excellent cable management features."
+  },
+  {
+    "img": "https://i.ibb.co.com/BCQmYMq/nh-l9i-5-1.jpg",
+    "price": "$99.99",
+    "name": "Noctua NH-L9i",
+    "description": "An air cooler with a 120mm RGB fan and four heat pipes, offering efficient cooling for high-performance CPUs."
+  }
+]
